@@ -2,6 +2,8 @@
 
 This repository contains the Backstage Template used to create the Kubernetes resources needed to build/deploy a simple quarkus application.
 
+Provision an instance of Red Hat Trusted Application Pipeline cluster in RHPDS.
+
 ## Quay repository setup
 
 Create a new quay repository called  quayadmin/superheroes-rest-heroes and make it public.
@@ -21,7 +23,7 @@ Update :
 
 To add the template in this repository to a Developer Hub instance it is necessary to add a link to a file in the GitLab repo. 
 
-Update the file in gitlab : gitops / janus-idp-gitops / charts / backstage / backstage-values.yaml
+Update the file in gitlab : gitops / janus-idp-gitops / charts / backstage / backstage-rhtap-values.yaml
 
 Add the following catalog rule, ensuring that the target points to your repo if you have cloned a copy from marrober repo.
 

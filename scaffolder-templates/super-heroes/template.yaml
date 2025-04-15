@@ -189,7 +189,7 @@ spec:
           cluster: .apps.cluster-wl7qm.wl7qm.sandbox1202.opentlc.com
           host: ${{ parameters.repo.host }}
           destination: ${{ parameters.repo.owner }}/${{ parameters.component_id }}
-          quay_destination: ${{ parameters.image_organization}}/${{ parameters.component_id }}
+          quay_destination: ${{ parameters.image_organization}}/${{ parameters.component_id }}-rest-heroes
           port: 8080
           verify_commits: ${{ parameters.repo.verify_commits }}
 
