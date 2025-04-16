@@ -28,11 +28,11 @@ Update the file in gitlab : gitops / janus-idp-gitops / charts / backstage / bac
 Add the following catalog rule, ensuring that the target points to your repo if you have cloned a copy from marrober repo.
 
 ````
-      - rules:
-        - allow:
-          - Template
-        target: https://github.com/marrober/super-heroes/blob/main/scaffolder-templates/templates-library.yaml
-        type: url
+          - rules:
+            - allow:
+              - Template
+            target: https://github.com/marrober/super-heroes/blob/main/scaffolder-templates/templates-library.yaml
+            type: url
 ````
 
 There are multiple instances of ArgoCD on the cluster. In the openshift-gitops namespace select the ArgoCD server with the URL that begins wuith argocd-server-openshift-gitops.
